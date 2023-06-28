@@ -1,10 +1,12 @@
-const balance = 900;
-const bonusBalance = 100;
-const isBanned = false;
-const isExist = false;
-const isSelling = true;
+function canAccessWebsite(age) {
+  if (age < 18) {
+    return false;
+  }
+  return true;
+}
 
-const canBuy =
-  (balance > 1000 || bonusBalance >= 100) && !isBanned && isSelling && !isExist;
+console.log(canAccessWebsite(18));
 
-console.log(`Могу купить игру: ${canBuy ? 'Yes' : 'No'}`);
+const canAccessWebsite2 = (age) => (age < 18 ? false : true);
+
+console.log(canAccessWebsite2(18));
