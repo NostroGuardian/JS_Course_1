@@ -1,17 +1,19 @@
-const role1 = 'admin';
-const role2 = 'moderator';
-const role3 = 'user';
+const users = ['Anya', 'Vika', 'Katya'];
+console.log(users);
 
-const roles = ['admin', 'moderator', 'user'];
+users[2] = 'Kris';
+console.log(users);
 
-console.log(roles[0]);
-console.log(roles.length);
-console.log(roles[roles.length - 1]);
+const arrLenght = users.push('Ivan');
+console.log(users, arrLenght);
 
-console.log(roles.at(-1));
+users.unshift('Liza');
+console.log(users);
 
-function square(el) {
-  return el + el;
-}
+const el = users.pop();
+console.log(users);
+console.log(el);
 
-console.log(square([1, 2, 3]));
+const el2 = users.shift();
+console.log(users);
+console.log(el2);
