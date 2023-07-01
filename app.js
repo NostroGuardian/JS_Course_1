@@ -1,11 +1,9 @@
-function add(a, b) {
-  return a + b;
-}
+const score = [5, 10, 0, 15];
 
-function subtract(a, b) {
-  return a - b;
-}
+// for (const [i, el] of score.entries()) {
+//   console.log(`round ${i + 1}: ${el}`);
+// }
 
-function calculate(a, b, fn) {
-  return fn(a, b);
-}
+score.forEach((el, i) => {
+  console.log(`round ${i + 1} - ${el}`);
+});
